@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registertion Page</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./registerpage.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 id="head-1">BudgetBuddy</h1>
+                <h3 id="head-2">Small steps today lead to big changes tomorrow...</h3>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-5 mt-5 mb-5">
+                <img src="https://static.vecteezy.com/system/resources/previews/016/900/444/non_2x/online-dating-app-login-illustration-valentine-s-day-love-match-mobile-leaves-gradient-character-illustration-vector.jpg" alt="" id="image-1">
+            </div>
+            <div class="col-12 col-md-5 mt-5 mb-5" style="background-color: white;height: 500px;">
+                <div class="d-grid gap-4 col-10 col-md-8 col-lg-6 mx-auto mt-5 mb-5" >
+                    <h2 id="head-3">Register Here</h2>
+                    <input type="text" class="form-control" placeholder="Username" id="uname">
+                    <input type="email" class="form-control" placeholder="Email" id="uemail">
+                    <input type="password" class="form-control" placeholder="Password" id="upassword">
+                    <button class="btn btn-success" type="button" onclick="userRegister()">Register</button>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<!-- JavaScript -->
+<script>
+    function userRegister(){
+        userdetails={
+            username:uname.value,
+            useremail:uemail.value,
+            userpassword:upassword.value,
+            income:0,
+            expense:0,
+            // incomeArray:[],
+            expenseArray:[],
+        }
+        if(userdetails.username=="" || userdetails.useremail=="" || userdetails.userpassword==""){
+            alert("Please fill all the fields");
+        }
+        else if(userdetails.username in localStorage){
+            alert("Given username is already existed");
+            uname.value="";
+            uemail.value="";
+            upassword.value="";
+        }
+        else{
+            localStorage.setItem(userdetails.username,JSON.stringify(userdetails));
+            window.location='./index.html';
+        }
+    }
+</script>
+</html>

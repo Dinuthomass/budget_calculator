@@ -1,0 +1,38 @@
+
+
+.container-fluid{
+    background-color: rgb(135, 203, 135);
+    min-height: 100vh;
+}
+
+#image-1 {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.9;
+}
+
+#uname, #upassword,#uemail {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#head-1 {
+    margin-top: 50px;
+    font-weight: 700;
+    color: rgb(76, 0, 255);
+    text-align: center;
+}
+
+#head-2 {
+    margin-top: 10px;
+    color: rgb(22, 22, 117);
+    margin-bottom: 40px;
+    text-align: center;
+}
+#head-3{
+    text-align: center;
+    color: rgb(139, 174, 140);
+}

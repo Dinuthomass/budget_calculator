@@ -1,0 +1,63 @@
+.container {
+    background-color: rgb(143, 203, 143);
+    
+}
+
+#logoutbtn {
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+#head-1 {
+    text-align: center;
+    color: rgb(70, 70, 194);
+}
+
+.incomebalanace, .expensebalanace {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: rgb(231, 169, 70);
+    text-align: center;
+}
+
+.expensebalanace {
+    background-color: rgb(106, 166, 235);
+}
+
+#head-2 {
+    padding: 20px;
+}
+
+#balanceamt {
+    margin-top: 30px;
+}
+
+#head-3 {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    font-weight: 500;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px 15px;
+}
+
+#head-4 {
+    text-align: center;
+    color: rgb(70, 70, 194);
+}
+
+@media (max-width: 767px) {
+    .overview {
+        margin-top: 20px;
+    }
+}

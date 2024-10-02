@@ -1,0 +1,68 @@
+.container-fluid {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    overflow: hidden;
+}
+
+.container-fluid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.istockphoto.com/id/1496018138/vector/business-growth-concept.jpg?s=612x612&w=0&k=20&c=aZfBU_ZhEL7GtvhIDZMuZaZ43m52EeJBxTBX-V9sajk=');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#image-1 {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.9;
+}
+
+#uname, #upassword {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#para-1 {
+    color: rgb(19, 97, 214);
+    font-size: 16px;
+    text-align: center;
+}
+
+#para-1 button {
+    border: none;
+    font-weight: 600;
+}
+
+#para-1 button:hover {
+    color:  rgb(76, 0, 255);
+    background-color: white;
+}
+
+#head-1 {
+    margin-top: 50px;
+    font-weight: 700;
+    color: rgb(76, 0, 255);
+    text-align: center;
+}
+
+#head-2 {
+    margin-top: 10px;
+    color: rgb(22, 22, 117);
+    margin-bottom: 40px;
+    text-align: center;
+}
+#head-3{
+    text-align: center;
+    color: rgb(99, 111, 182);
+}
